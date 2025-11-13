@@ -1,0 +1,171 @@
+/* 🌈 Background and layout */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/* 🌟 Main container */
+.container {
+  width: 95%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ✨ Smooth fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔷 Header */
+h2 {
+  text-align: center;
+  color: #1e3a8a;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+/* 🔍 Search bar section */
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input.form-control:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
+}
+
+/* 🎯 Buttons */
+button.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✏️ Edit form card */
+.card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+.card input {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+/* 📋 Table styling */
+table {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+table th, table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* 🧩 Buttons inside table */
+.btn-warning {
+  background-color: #f59e0b;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #d97706;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+}
+
+/* 📱 Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  table th, table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+.is-invalid {
+  border-color: red !important;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+}
+.border-danger {
+  border: 2px solid red !important;
+}
