@@ -169,3 +169,52 @@ table th, table td {
 .border-danger {
   border: 2px solid red !important;
 }
+
+
+
+
+
+/* 👋 Emoji container */
+.emoji-box {
+  text-align: center;
+  margin-bottom: 25px;
+  animation: fadeSlide 1s ease-out;
+}
+
+/* 👋 Emoji style */
+.wave {
+  font-size: 60px;
+  display: inline-block;
+  animation: waveHand 1.8s infinite ease-in-out;
+}
+
+/* ✨ Text under emoji */
+.emoji-text {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e3a8a;
+  animation: textFade 1s ease-in-out;
+}
+
+/* 🖐️ Hand waving animation */
+@keyframes waveHand {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(20deg); }
+  40% { transform: rotate(-15deg); }
+  60% { transform: rotate(20deg); }
+  80% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* 👇 Smooth slide-in animation */
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✨ Text fade animation */
+@keyframes textFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
