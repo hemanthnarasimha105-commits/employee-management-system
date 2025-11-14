@@ -123,13 +123,20 @@ function App() {
     const isPasswordMissing = showValidation && !password;
 
     return (
+      
       <div className="container mt-5" style={{ maxWidth: '400px' }}>
+         <h1> <div className="emoji-box">
+  <span className="wave">👋</span>
+  <h3 className="emoji-text">Hello! Please Login</h3></div></h1>
+      
+        
         
         <div className="card p-4 shadow">
-          <h3 className="text-center mb-4">Login</h3>
+          
+          <h3 className="text-center mb-4"></h3>
           <form onSubmit={handleLogin}>
-            <div><pre>Username:"admin"
-                      password:"12345"</pre></div>
+         <h3 className="emoji-text">  <div><pre>Username:"admin"
+                      password:"12345"</pre></div></h3>
             <input
               type="text"
               className={`form-control mb-3 ${isUserMissing ? 'border-danger shadow-sm' : ''}`}
